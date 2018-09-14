@@ -67,7 +67,7 @@ end
 
 def starts_with_consonant? s
   first_char = s[0]
-  if first_char =~ /[^AEIOUaeiou[:alpha]]/ && first_char != "" 
+  if first_char =~ /[^AEIOUaeiou]/ && first_char != "" 
     return true
   else
     return false
@@ -92,8 +92,8 @@ end
 class BookInStock
  
  def initialize(isbn, price)
-   #raise ArgumentError unless isbn != ""
-   #raise ArgumentError unless price > 0
+   raise ArgumentError if isbn == ""
+   raise ArgumentError if price <= 0
    @isbn = isbn
    @price = price
  end
