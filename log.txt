@@ -1,0 +1,89 @@
+false
+
+Ruby intro part 1
+  #sum
+    should be defined
+    returns correct sum [20 points]
+    works on the empty array [10 points]
+  #max_2_sum
+3
+2
+    should be defined
+5
+4
+1
+-2
+    returns the correct sum [7 points]
+3
+3
+    works even if 2 largest values are the same [3 points]
+0
+0
+    returns zero if array is empty [10 points]
+3
+0
+    returns value of the element if just one element [10 points]
+  #sum_to_n
+    should be defined
+    returns true when any two elements sum to the second argument [30 points]
+    returns false for any single element array [5 points]
+    returns false for an empty array [5 points]
+
+Finished in 0.00611 seconds (files took 0.08772 seconds to load)
+12 examples, 0 failures
+
+false
+
+#hello
+  should be defined
+  The hello method returns the correct string [30 points]
+
+#starts_with_consonant?
+  should be defined
+  classifies true cases [10 points]
+  classifies false cases [10 points]
+  works on the empty string [5 points]
+  works on nonletters [5 points] (FAILED - 1)
+
+#binary_multiple_of_4?
+  should be defined
+  classifies valid binary numbers [30 points]
+  rejects invalid binary numbers [10 points]
+
+Failures:
+
+  1) #starts_with_consonant? works on nonletters [5 points]
+     Failure/Error: expect(starts_with_consonant?('#foo')).to be_falsy
+
+       expected: falsey value
+            got: true
+     # ./spec/part2_spec.rb:38:in `block (2 levels) in <top (required)>'
+
+Finished in 0.01486 seconds (files took 0.08712 seconds to load)
+10 examples, 1 failure
+
+Failed examples:
+
+rspec ./spec/part2_spec.rb:37 # #starts_with_consonant? works on nonletters [5 points]
+
+false
+
+BookInStock
+  should be defined
+  getters and setters
+    should set ISBN [10 points]
+    should set price [10 points]
+    should be able to change ISBN [10 points]
+    should be able to change price [10 points]
+  constructor
+    should reject invalid ISBN number [10 points]
+    should reject zero price [10 points]
+    should reject negative price [10 points]
+  #price_as_string
+    should be defined
+    should display 33.95 as "$33.95" [10 points]
+    should display 1.1 as $1.10 [10 points]
+    should display 20 as $20.00 [10 points]
+
+Finished in 0.00504 seconds (files took 0.08783 seconds to load)
+12 examples, 0 failures
